@@ -1,0 +1,5 @@
+install Node.js
+
+run command --> npm init
+
+run command --> npm i prompt-sync                                                               // to store user input
