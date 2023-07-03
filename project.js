@@ -8,14 +8,14 @@
 
 
 const deposit = () => {
-  while (true) {
-    const depositAmount = prompt("Enter a deposit amount: ");
+  while (true) {                                                                 // loop keeps on repeating till user enters a valid amount
+    const depositAmount = prompt("Enter a deposit amount: ");                               // asking user by printing this
     const numberDepositAmount = parseFloat(depositAmount);
 
     if (isNaN(numberDepositAmount) || numberDepositAmount <= 0) {
       console.log("Invalid deposit amount, try again.");
     } else {
-      return numberDepositAmount;
+      return numberDepositAmount;                                                // once valid amount is entered--> the value us returned and the loop ends
     }
   }
 };
