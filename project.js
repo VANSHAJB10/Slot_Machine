@@ -2,13 +2,13 @@
 // 2. Determine the number of lines to bet on
 // 3. Collect a bet amount
 // 4. Spin the slot machine
-// 5. check if the user won
-// 6. give the user their winnings
-// 7. play again
+// 5. Check if the user won
+// 6. Give the user their winnings
+// 7. Play again
 
 
 const deposit = () => {
-  while (true) {                                                                 // loop keeps on repeating till user enters a valid amount
+  while (true) {                                                                 // loop keeps on repeating till the user enters a valid amount
     const depositAmount = prompt("Enter a deposit amount: ");                               // asking user by printing this
     const numberDepositAmount = parseFloat(depositAmount);
 
@@ -21,7 +21,7 @@ const deposit = () => {
 };
 
 const getNumberOfLines = () => {
-  while (true) {                                                                 // loop keeps on repeating till user enters a valid amount
+  while (true) {                                                                 // loop keeps on repeating till the user enters a valid amount
     const lines = prompt("Enter the number of lines to bet on (1-3): ");                               // asking user by printing this
     const numberOfLines = parseFloat(lines);
 
@@ -32,3 +32,7 @@ const getNumberOfLines = () => {
     }
   }
 };
+
+
+const depositAmount = deposit();
+const numberOfLines = getNumberOfLines();
