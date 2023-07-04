@@ -25,7 +25,7 @@ const getNumberOfLines = () => {
     const lines = prompt("Enter the number of lines to bet on (1-3): ");                               // asking user by printing this
     const numberOfLines = parseFloat(lines);
 
-    if (isNaN(numberOfLines) || numberOfLines <= 0) {
+    if (isNaN(numberOfLines) || numberOfLines <= 0 || numberOfLines >3) {              // numberOfLines should be 1,2 or 3
       console.log("Invalid input, try again.");
     } else {
       return numberOfLines;                                                // once valid amount is entered--> the value us returned and the loop ends
