@@ -33,12 +33,12 @@ const getNumberOfLines = () => {
   }
 };
 
-const getBet = (balance, lines) => {
+const getBet = (balance, lines) => {                                            // balance is the total amount on which bet can be made  // bet is multiplied by no of lines
   while (true) {
     const bet = prompt("Enter the bet per line: ");
     const numberBet = parseFloat(bet);
 
-    if (isNaN(numberBet) || numberBet <= 0 || numberBet > balance / lines) {
+    if (isNaN(numberBet) || numberBet <= 0 || numberBet > balance / lines) {       // FOCUS on --> numberBet > balance / lines
       console.log("Invalid bet, try again.");
     } else {
       return numberBet;
@@ -70,5 +70,6 @@ const spin = () => {
 
 
 
-const depositAmount = deposit();
-const numberOfLines = getNumberOfLines();
+let balance = deposit();                                  // let -- a varibale that can be modified
+const numberOfLines = getNumberOfLines();                 // const -- a varibale that can't be modified
+const bet = getBet(balance, numberOfLines);
