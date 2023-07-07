@@ -34,6 +34,12 @@ const SYMBOLS_COUNT = {         // we will rondom selection from these total num
 
 // SYMBOLS_COUNT["A"]    --> gives the value associated with A which is 2
 
+const SYMBOL_VALUES={       // the bet amount will be multiplied with this multiplier if all the three columns of a row are identical 
+    "A" : 5, 
+    "B" : 4,
+    "C" : 3,
+    "D" : 2
+}
 
 
 
