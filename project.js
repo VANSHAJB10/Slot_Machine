@@ -23,6 +23,20 @@ Heirarchy of keeping different objects
 
 
 
+// defining symbols 
+  /*OBJECT is Js*/
+const SYMBOLS_COUNT = {         // we will rondom selection from these total number of symbols to be present in a column when a spin is performend
+    "A" : 2,        // here "A" is key/property/attributes of object named- SYMBOLS_COUNT associated with a value = '2'
+    "B" : 4,
+    "C" : 6,
+    "D" : 8
+}
+
+// SYMBOLS_COUNT["A"]    --> gives the value associated with A which is 2
+
+
+
+
 const deposit = () => {
   while (true) {                                                                 // loop keeps on repeating till the user enters a valid amount
     const depositAmount = prompt("Enter a deposit amount: ");                               // asking user by printing this
