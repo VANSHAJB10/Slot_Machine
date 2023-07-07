@@ -7,6 +7,22 @@
 // 7. Play again
 
 
+const prompt = require ("prompt-sync")();                                                   // to store user input 
+
+const ROWS = 3;                                         // global vars that are const are written in all-caps just as a practice
+const COLS = 3;
+
+/*
+Heirarchy of keeping different objects
+1. imports
+2. global var should be at the Top 
+3. classes and functions
+4. main line or other aspects of program
+  
+*/
+
+
+
 const deposit = () => {
   while (true) {                                                                 // loop keeps on repeating till the user enters a valid amount
     const depositAmount = prompt("Enter a deposit amount: ");                               // asking user by printing this
