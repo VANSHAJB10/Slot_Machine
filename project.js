@@ -95,7 +95,7 @@ const spin = () => {
     reels.push([]);
     const reelSymbols = [...symbols];                           /// ?????????????????????????????????????
     for (let j = 0; j < ROWS; j++) {                            
-      const randomIndex = Math.floor(Math.random() * reelSymbols.length);   // Math.random() generate the number btw 0 to 1;  to select a random element  ;  
+      const randomIndex = Math.floor(Math.random() * reelSymbols.length);   // Math.random() generate the number btw 0 to 1;  to select a random element  ; Math.floor() will round down the generated number 
       const selectedSymbol = reelSymbols[randomIndex];                      // 
       reels[i].push(selectedSymbol);
       reelSymbols.splice(randomIndex, 1);
