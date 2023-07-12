@@ -81,7 +81,7 @@ const getBet = (balance, lines) => {                                            
     }
   }
 };
-
+              // COMPLICATED FUNCTION
 const spin = () => {                                              
   const symbols = [];                                              // put all the symbols in an array and randomly select from the array
   // data that needs to be added can be changed without changing the reference to the array, (taking a const type array)          <!!<----Important
