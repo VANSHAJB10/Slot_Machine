@@ -91,12 +91,12 @@ const spin = () => {
     }
   }
    const reels = [];
-  for (let i = 0; i < COLS; i++) {
+  for (let i = 0; i < COLS; i++) {                              // running the loop for all the 3 cols
     reels.push([]);
-    const reelSymbols = [...symbols];
-    for (let j = 0; j < ROWS; j++) {
-      const randomIndex = Math.floor(Math.random() * reelSymbols.length);
-      const selectedSymbol = reelSymbols[randomIndex];
+    const reelSymbols = [...symbols];                           /// ?????????????????????????????????????
+    for (let j = 0; j < ROWS; j++) {                            
+      const randomIndex = Math.floor(Math.random() * reelSymbols.length);   // Math.random() generate the number btw 0 to 1;  to select a random element  ;  
+      const selectedSymbol = reelSymbols[randomIndex];                      // 
       reels[i].push(selectedSymbol);
       reelSymbols.splice(randomIndex, 1);
     }
