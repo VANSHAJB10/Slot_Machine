@@ -82,11 +82,12 @@ const getBet = (balance, lines) => {                                            
   }
 };
 
-const spin = () => {
-  const symbols = [];
+const spin = () => {                                              
+  const symbols = [];                                              // put all the symbols in an array and randomly select from the array
+  // data that needs to be added can be changed without changing the reference to the array, (taking a const type array)          <!!<----Important
   for (const [symbol, count] of Object.entries(SYMBOLS_COUNT)) {
     for (let i = 0; i < count; i++) {
-      symbols.push(symbol);
+      symbols.push(symbol); // inserting the elements inside the array
     }
   }
    const reels = [];
